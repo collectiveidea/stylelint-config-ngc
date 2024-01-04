@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-ngc",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Shareable stylelint config used by NGC's CSS",
   "license": "MIT",
   "main": "index.js",
