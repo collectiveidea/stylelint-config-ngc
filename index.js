@@ -1,11 +1,16 @@
 module.exports = {
   extends: 'stylelint-config-recommended',
   plugins: [
+    '@stylistic/stylelint-plugin',
     'stylelint-order',
-    'stylelint-scss',
-    'stylelint-stylistic'
+    'stylelint-scss'
   ],
   rules: {
+    '@stylistic/color-hex-case': 'lower',
+    '@stylistic/indentation': 2,
+    '@stylistic/no-eol-whitespace': true,
+    '@stylistic/no-extra-semicolons': true,
+    '@stylistic/number-leading-zero': 'always',
     'at-rule-no-unknown': null,
     'color-hex-length': 'short',
     'color-named': 'never',
@@ -48,11 +53,6 @@ module.exports = {
     'scss/at-rule-no-unknown': true,
     'scss/function-no-unknown': true,
     'selector-pseudo-element-colon-notation': 'double',
-    'stylistic/color-hex-case': 'lower',
-    'stylistic/indentation': 2,
-    'stylistic/no-eol-whitespace': true,
-    'stylistic/no-extra-semicolons': true,
-    'stylistic/number-leading-zero': 'always',
     'value-no-vendor-prefix': true
   }
 }
