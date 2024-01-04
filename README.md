@@ -5,7 +5,7 @@
 
 ## Install
 
-$ yarn add stylelint-config-primer --repository "ngcgroup/stylelint-config-ngc#main"
+$ npm install "collectiveidea/stylelint-config-ngc#main"
 
 Note: You can switch `#main` for a different hash, tag, or branch. Actually, you probably should do this.
 
@@ -23,6 +23,6 @@ In the stylelint config file for your project, extend this configuration:
 
 ### Plugins
 
+* @stylelistic/stylelint-plugin
 * stylelint-order
 * stylelint-scss
-* stylelint-stylistic
