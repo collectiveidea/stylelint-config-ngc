@@ -5,18 +5,20 @@
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
-    "@stylistic/stylelint-plugin": "^2.0.0",
-    "stylelint": "^16.1.0",
+    "@stylistic/stylelint-plugin": "^3.0.0",
+    "cross-env": "^7.0.3",
     "stylelint-config-recommended": "^14.0.0",
     "stylelint-order": "^6.0.2",
     "stylelint-scss": "^6.0.0"
   },
   "devDependencies": {
     "jest": "^28.1.0",
-    "standard": "*"
+    "standard": "*",
+    "stylelint": "^16.1.0",
+    "stylelint-test-rule-node": "^0.2.1"
   },
   "scripts": {
     "eslint": "standard",
-    "test": "jest"
+    "test": "cross-env NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest --runInBand"
   }
 }
