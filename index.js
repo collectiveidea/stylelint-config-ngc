@@ -2,8 +2,7 @@ module.exports = {
   extends: 'stylelint-config-recommended',
   plugins: [
     '@stylistic/stylelint-plugin',
-    'stylelint-order',
-    'stylelint-scss'
+    'stylelint-order'
   ],
   rules: {
     '@stylistic/color-hex-case': 'lower',
@@ -50,8 +49,6 @@ module.exports = {
         severity: 'warning'
       }
     ],
-    'scss/at-rule-no-unknown': true,
-    'scss/function-no-unknown': true,
     'selector-pseudo-element-colon-notation': 'double',
     'value-no-vendor-prefix': true
   }
